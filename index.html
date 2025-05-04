@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
         body {
-            background: url('img/background.png') no-repeat center center;
+            background: url('background.png') no-repeat center center;
             background-size: cover;
             min-height: 100vh;
             margin: 0;
@@ -214,17 +214,17 @@
 </head>
 
 <body>
-    <img src="img/constellation.png" alt="Constellation Logo" class="logo">
+    <img src="constellation.png" alt="Constellation Logo" class="logo">
 
     <div class="buttons-wrapper">
         <div class="container-left">
-            <button class="button">Roblox</button>
-            <button class="button">Discord</button>
+            <button class="button" href="https://www.roblox.com/communities/16883466">Roblox</button>
+            <button class="button" href="https://discord.gg/Cu83cFbwGj">Discord</button>
         </div>
         <div class="container-right">
-            <button class="button">Documentation</button>
-            <button class="button">Status page</button>
-            <button class="button">Customer portal</button>
+            <button class="button" href="https://docs.constellationgroup.site">Documentation</button>
+            <button class="button" href="https://status.constellationgroup.site">Status page</button>
+            <button class="button" href="https://customer.constellationgroup.site">Customer portal</button>
             <a href="mailto:inquiries@constellationgroup.site" class="button">Contact</a>
         </div>
     </div>
@@ -234,10 +234,9 @@
     </div>
 
     <script>
-        const buttons = document.querySelectorAll('.button');
         const body = document.body;
 
-        buttons.forEach(button => {
+        document.querySelectorAll('.button').forEach(button => {
             button.addEventListener('mouseenter', () => {
                 body.classList.add('effect-active');
             });
